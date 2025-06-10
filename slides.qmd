@@ -1,0 +1,114 @@
+---
+title: "Making a Mathematical Statistics Course More Modern"
+subtitle: "USCOTS 2025"
+date: "July 18, 2025"
+format:
+  revealjs:
+    author: 
+      - "Jessica Chapman"
+      - "Matt Higham"
+    institute: 
+      - "St. Lawrence University (USA)"
+    footer: "Modernizing Undergraduate Stat. Theory Course"
+    slide-number: true
+    preview-links: true
+    transition: fade
+    theme: [default, slides.scss]
+    smaller: false
+    auto-stretch: true
+    code-link: true
+    incremental: false
+    embed-resources: true
+execute: 
+  echo: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| warning: false
+
+# set width of code output
+options(width = 80)
+
+# load background packages
+library(countdown)
+library(tidyverse)
+library(here)
+```
+
+## Who Are We
+
+slide about Jessica
+
+## Who Are We
+
+slide about Matt
+
+## Your Turn
+
+::: task
+Form groups of 3 to 5 people with those around you. Introduce yourselves and INSERT SOME INTRO QUESTION.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 4)
+```
+
+## Motivation
+
+::: goals
+1. What more can we do to make math stat more "useful?"
+2. ADD OTHER GOALS HERE AFTER MORE IS FLESHED OUT
+:::
+
+## What Do We Mean by "Math-Stat"?
+
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| output: true
+knitr::include_graphics(here("images/stat_major.png"))
+```
+
+<!-- mention typical audience: undergraduate statistics majors who have already taken a lot of calculus and a semester of probability -->
+
+## Motivation: Student Feedback
+
+::: {.callout-important appearance="simple"}
+
+## Feedback A
+
+"I really only think this class is applicable to someone going to grad school or heavily love mathematics. The class is great in that it is difficult and extends your math but very low applicability to life/career."
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Feedback B
+
+"There are so many components of this course that I will be able to apply to my future career and life experiences, a lot of which I think everyone regardless of field of study should at least know a little about."
+
+other options: "This course has helped my learning because it increased my understanding of important statistical concepts that I will be able to apply in the near future! Also, through this course I have gained critical thinking skills and improved my work on conceptual problems."
+
+other options: "I really enjoyed the real world examples we used and that not every project was analytical; there was a lot of conceptual material as well which made the course well rounded."
+:::
+
+## Activity
+
+Might be nice to do an activity here to break up the "presentation" part of the breakout session, especially if the lit review slides end up going before in/out.
+
+## Literature Review
+
+assuming the lit. review has some comments on what should go in / out, this can either precede or follow the in/out activity?
+
+## Activity: In or Out?
+
+## Activity: Mini-Projects
+
+## Activity: Assessment
+
+
+
+
