@@ -97,7 +97,8 @@ other options: "I really enjoyed the real world examples we used and that not ev
 
 ## Activity
 
-Might be nice to do an activity here to break up the "presentation" part of the breakout session, especially if the lit review slides end up going before in/out.
+What is useful?
+
 
 ## Literature Review
 
@@ -105,7 +106,20 @@ assuming the lit. review has some comments on what should go in / out, this can 
 
 ## Activity: In or Out?
 
-## Activity: Mini-Projects
+bayes
+
+computation
+
+
+## Activity: Short Story
+
+connect to what our students were saying
+
+lit review after each activity
+
+## Activity: Bayes
+
+## Activity: p-value Paper
 
 ## Activity: Assessment
 
