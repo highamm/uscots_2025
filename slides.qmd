@@ -9,6 +9,7 @@ format:
       - "Matt Higham"
     institute: 
       - "St. Lawrence University (USA)"
+      - "St. Lawrence University (USA)"
     footer: "Modernizing Undergraduate Stat. Theory Course"
     slide-number: true
     preview-links: true
@@ -90,36 +91,160 @@ knitr::include_graphics(here("images/stat_major.png"))
 
 "There are so many components of this course that I will be able to apply to my future career and life experiences, a lot of which I think everyone regardless of field of study should at least know a little about."
 
-other options: "This course has helped my learning because it increased my understanding of important statistical concepts that I will be able to apply in the near future! Also, through this course I have gained critical thinking skills and improved my work on conceptual problems."
+<!-- other options: "This course has helped my learning because it increased my understanding of important statistical concepts that I will be able to apply in the near future! Also, through this course I have gained critical thinking skills and improved my work on conceptual problems." -->
 
-other options: "I really enjoyed the real world examples we used and that not every project was analytical; there was a lot of conceptual material as well which made the course well rounded."
+<!-- other options: "I really enjoyed the real world examples we used and that not every project was analytical; there was a lot of conceptual material as well which made the course well rounded." -->
 :::
 
 ## Activity
 
-What is useful?
+::: task
+What does it mean for a math-stat course to be "useful?" In your groups, try to come up with a specific definition for "useful" in this context.
+:::
 
+```{r}
+#| echo: false
 
-## Literature Review
+countdown(minutes = 4)
+```
 
-assuming the lit. review has some comments on what should go in / out, this can either precede or follow the in/out activity?
+## What Our Students Said (Top 3 Response Types)
+
+* __Applicable to Future__: "I defined useful as something I think I will continue to use or see again in the future—skills or ideas that expand into future learning goals."
+* __Applicable to the "Real World"__: "I based this on how applicable these things would be to my professional life or general knowledge after college...."
+<!-- Things like confidence intervals I could imagine encountering, whereas the pivot method will most likely never come up." -->
+* __Deepened Understanding__: "I (also) considered how much something deepened my conceptual understanding."
+
+## Is Math Stat "Useful?" 
+
+* Could math stat be more "useful?"
+* JSM 2003 Session "Is the Math Stat Course obsolete?"
+    
+    
+    <!-- * <https://www.stat.rice.edu/~dobelman/textfiles/MathStatObsolete.Teaching.pdf> -->
 
 ## Activity: In or Out?
-
-bayes
-
-computation
 
 
 ## Activity: Short Story
 
-connect to what our students were saying
+* _Fostering Conceptual Understanding in Mathematical Statistics_ by Green and Blankenship (2015).
+    * published in _The American Statistician_.
+ <!-- https://doi.org/10.1080/00031305.2015.1069759 -->
 
-lit review after each activity
+## Activity: Short Story
+
+A "meaningful story" is one continuous piece of writing / creative work that uses key words from a list and in which the sentences "make sense and hang together." That is, the ideas in the story must illustrate that you understand key concepts from math-stat in a way that allows you to write "meaningfully" about them. It is your job to use the terms in a way that demonstrates that you understand the statistical concepts involved and why we care about these terms in the big picture of statistical theory.
+
+## Activity: Short Story
+
+<!-- hat topics can just be taken from what our students actually wrote about.  -->
+<!-- e.g., living on a farm, gender inequality in sports, 80s music, applying to jobs, landing on an alien planet, etc. -->
+
+::: task
+With your small group, orally contruct a __meaningful paragraph__ about a topic that you will draw from a hat using __3__ of the following __5__ terms:
+
+* Estimator
+* Estimate (as a noun)
+* Parameter
+* Bias
+* Variance
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+
+## What Our Students Wrote About
+
+* 80's music.
+* applying to jobs (this is a spring semester course of mostly seniors!).
+* gender inequality in women's and men's hockey.
+* living on a farm.
+* all kinds of sports!
+
+## What a Student Said
+
+"The second mini-project was the most impactful assessment for me....This project was very different from much of the Math/Stat curriculum and a unique opportunity to show understanding of different terms. Being forced to use these terms in the context of a sentence helps to develop a better understanding of what they mean. It is difficult to explain terms like estimator, variance, or binomial distribution in a statistical context of a story without a good understanding of their meanings...."
+
+<!-- This project helped to build a base of vocabulary and to show that being able to explain concepts or terms is a good way to demonstrate or practice understanding of those concepts. -->
+
 
 ## Activity: Bayes
 
 ## Activity: p-value Paper
+
+Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyond "p< 0.05". _The American Statistician_, _73_(sup1), 1-19.
+
+<!-- To move forward to a world beyond "p < 0.05," we must recognize afresh that statistical inference is not - and never has been - equivalent to scientific inference (Hubbard, Haig, and Parsa 2019; Ziliak 2019). However, looking to statistical significance for a marker of scientific observations' credibility has created a guise of equivalency.  -->
+
+"Moving beyond 'statistical significance' opens researchers to the real significance of statistics, which is 'the science of learning from data, and of measuring, controlling, and communicating uncertainty' (Davidian and Louis 2012)."
+
+## "These p-values We've Been Using for 4 Years Are Flawed??"
+
+![](images/tenor.gif)
+
+## Activity: p-value Paper
+
+On Handout.
+
+```{r}
+#| echo: false
+
+countdown(minutes = 7)
+```
+
+```{r}
+#| echo: false
+#| output: false
+#| warning: false
+library(tidyverse)
+set.seed(41412001)
+n <- 1000
+store_a <- rexp(n = n, rate = 0.2) |> round(2)
+store_b <- store_a + rnorm(n, mean = 0.1, sd = 0.7) 
+price_df <- tibble(store_a, store_b) |> 
+  mutate(diff = store_b - store_a)
+```
+
+```{r}
+#| echo: false
+#| output: false
+#| fig-height: 3
+ggplot(data = price_df, aes(x = diff)) +
+  geom_histogram(bins = 20, colour = "orchid4", fill = "orchid1") +
+  theme_minimal(base_size = 18) +
+  labs(x = "Price Differences (in Dollars, Store B minus Store A)")
+```
+
+```{r}
+#| echo: false
+#| output: false
+t.test(diff ~ 1, data = price_df)
+price_df |>
+  summarise(mean = mean(diff),
+            sd = sd(diff),
+            prop = mean(diff > 0))
+```
+
+## What Our Students Said
+
+<!-- The last mini project taught me to think more critically about statistics.  -->
+
+"I always considered p-values to be the best way to measure significance and did not question what a p-value really meant. The project taught me what statistical thinking is and to take into account more than just whether a p-value passes some threshold. In intro statistics, we are taught to follow specific steps and formulas without much background knowledge or reasoning. I am someone who does not often question information, especially in classes....."
+
+<!-- I take the information given to me and regard it as the truth, and the best way to solve a problem. Further than just p-values, I realized that even though something is taught a certain way, there may be more information or different interpretations. Especially in quantitative classes, it is easy to see a formula and not question it, but it is important to understand where things come from, and why we use the methods we are taught. -->
+
+## What Our Students Said
+
+<!-- I think that I learned the most from mini project 5, since it was one of the more interesting mathematical papers I have read. The discussion of redefining the way we look at statistical analysis had me hungry for more. It  -->
+
+"(The p-value paper) was probably the most thought-provoking assignment for me because it forced me to think critically about how we conduct research. Coming from an Economics background, there is a lot of conversation around the reliability or quality of research. I felt that this assessment was the most impactful for me long-term because it forced me to think critically about something that I had previously just taken for granted...."
+
+ <!-- It almost felt like I was back in a philosophy class that I took when I thought I wanted to be a philosophy major. I enjoy thinking about ways to challenge the status quo, so although this assessment was more of a one-off that did not have a great technical focus, I believe that it stimulated my thought process the most out of all assessments. I learned to consider many factors when conducting research, which had a profound impact on my honors project and the conclusions I was able to draw from my analysis. I believe that the broad reach of this assignment, or its cross-functionality across subjects, is what made me enjoy it so much. For me, enjoyment and learning are highly correlated, so when I am enjoying a topic thoroughly, I can deepen my learning. -->
 
 ## Activity: Assessment
 

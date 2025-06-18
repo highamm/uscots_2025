@@ -1,0 +1,57 @@
+---
+title: "p-value Paper Activity"
+format: pdf
+---
+
+For their introductory statistics project, a student wants to determine if there is evidence of a difference in average price between products at two grocery stores in town. They have __a lot__ of time so decide to randomly sample 1000 common items at the two stores, record the price of the item at each store (ignoring any sales), and run a matched pairs t-test on the 1000 differences with a significance level of $\alpha = 0.05$. 
+
+They complete all of the steps of their matched pairs t-test correctly. They then write the following conclusion.
+
+We reject the null hypothesis. There is statistically significant evidence that prices of items at store B are higher than prices of items at store A, on average.
+
+#### Your Task
+
+Recall that Wasserstein, Schirm, & Lazar, (2019) had the following recommendations:
+
+_We summarize our recommendations in two sentences totaling seven words: "Accept uncertainty. Be thoughtful, open, and modest." Remember "ATOM."_
+
+Focusing on the first recommendation, _accept uncertainty_, use the following description of uncertainty, summary statistics of the differences, and graph of the student's data to modify the student's conclusion. 
+
+_Uncertainty exists everywhere in research. And, just like with the frigid weather in a Wisconsin winter, there are those who will flee from it, trying to hide in warmer havens elsewhere. Others, however, accept and even delight in the omnipresent cold; these are the ones who buy the right gear and bravely take full advantage of all the wonders of a challenging climate. Significance tests and dichotomized p-values have turned many researchers into scientific snowbirds, trying to avoid dealing with uncertainty by escaping to a "happy place" where results are either statistically significant or not. In the real world, data provide a noisy signal. Variation, one of the causes of uncertainty, is everywhere. Exact replication is difficult to achieve. So it is time to get the right (statistical) gear and "move toward a greater acceptance of uncertainty and embracing of variation" (Gelman 2016)._
+
+## Activity: p-value Paper
+
+```{r}
+#| echo: false
+#| output: false
+#| warning: false
+library(tidyverse)
+set.seed(41412001)
+n <- 1000
+store_a <- rexp(n = n, rate = 0.2) |> round(2)
+store_b <- store_a + rnorm(n, mean = 0.1, sd = 0.7) 
+price_df <- tibble(store_a, store_b) |> 
+  mutate(diff = store_b - store_a)
+```
+
+```{r}
+#| echo: false
+#| fig-height: 2.5
+ggplot(data = price_df, aes(x = diff)) +
+  geom_histogram(bins = 20, colour = "orchid4", fill = "orchid1") +
+  theme_minimal(base_size = 18) +
+  labs(x = "Price Differences (in Dollars, B minus A)")
+```
+
+```{r}
+#| echo: true
+#| output: true
+t.test(diff ~ 1, data = price_df)
+price_df |>
+  summarise(mean = mean(diff),
+            median = median(diff),
+            sd = sd(diff),
+            prop = mean(diff > 0),
+            q1 = quantile(diff, 0.25),
+            q3 = quantile(diff, 0.75))
+```
