@@ -122,6 +122,21 @@ countdown(minutes = 4)
     
     
     <!-- * <https://www.stat.rice.edu/~dobelman/textfiles/MathStatObsolete.Teaching.pdf> -->
+    
+quotes I like: The math stat course has not changed in 40 years, whereas statistics has changed enormously, so how could the course not be obsolete? - Moore
+
+"Leave out point estimation (or allow 5 min tops), hypothesis testing, power, type I error, type II error, and sample size calculation. Put these topics into the "learn to be a consultant" course. Leave out one sample z, two sample t, one sample , chi-square. Leave it out! There is a lot in the traditional course that is worth while but the psyche of the traditional course is not working anymore. The ways to turn it around are not that different than the statistical literacy course..... leave out UMVUE and unbiasedness." - Reid
+
+"The worse thing is that it tends to bore the teachers, and if teachers are bored, students don’t get the liveliness of the subject." - Efron
+
+idea that comes up a bit: modeling.
+
+"We should de-emphasize t-test, jackknife, named nonparametric methods, asymptotics (I’ve never seen an infinite sample), Cramer-Rao lower bound. It should not be too much like a catalog. I would add modeling, computing (likelihood graphics), problem solving, decision calculations (how to think about the best thing to do), risk, odds, expectation, sample and experimental design (at least touch on that), foundational issues such as understanding p-values (direction of conditioning), worrying about whether they are any good." - Morris
+
+DM: I heard no support for continuing to teach optimal testing (Neyman-Pearson) in first course?
+All: right
+
+question about proofs: "I don’t know. My first reaction is to say do not teach formal derivation. Var( x ) is reasonably accessible, but if BE did not understand the t distribution when he first saw it, then your students won’t. I can’t see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us – you will not be able to squeeze all of this into this course."
 
 ## Activity: In or Out?
 
