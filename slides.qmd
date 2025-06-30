@@ -49,7 +49,10 @@ slide about Matt
 ## Your Turn
 
 ::: task
-Form groups of 3 to 5 people with those around you. Introduce yourselves and INSERT SOME INTRO QUESTION.
+Form groups of 3 to 5 people with those around you. Introduce yourselves and INSERT SOME INTRO QUESTION. Here are some possible intro questions (pick one or two):
+1. What is your favorite course to teach? Do you have a favorite topic in that course? If so, what is it?
+2. If you could ban one misused(?) statistical term forever, what would it be?
+3. What statistical concept do you secretly love more than you admit?
 :::
 
 ```{r}
@@ -187,8 +190,54 @@ countdown(minutes = 5)
 
 <!-- This project helped to build a base of vocabulary and to show that being able to explain concepts or terms is a good way to demonstrate or practice understanding of those concepts. -->
 
+## Motivation: Student Feedback
+
+"I really hope that I remember Bayes. I feel like this would be helpful for me to remember because I want to
+study epidemiology and public health. As we learn more about disease and track new diseases it will probably
+be useful to update our ideas with what we have learned."
+
+"In my opinion, the process of coming up with a prior is a creative one. There is no single correct answer for
+a prior distribution, it is only based on previous knowledge around a subject. Different people may
+come up with different priors, and in turn create a posterior distribution based on data examined after
+the prior is created. It takes creativity to be a Bayesian"
+
+"I would like to know more about how experts in a field develop informative priors for
+Bayesian Modeling."
+
+"Bayesian statistics is a whole different world where we
+think about the parameters as random quantities and not having true values. I really liked
+the process of starting with a prior distribution and then using the data to update our
+beliefs with a posterior distribution."
+
+"I initially struggled understanding Bayesian statistics. I could not wrap my head around that
+concept because I like to find an answer from a given formula. I do not like when
+answers can be subjective and with Bayesian statistics, the choice of the prior distribution
+is highly subjective. I was getting frustrated with myself because I was struggling to
+understand the material and how to do the homework problems. However, I had this
+realization one afternoon that in order to understand this material, I had to let go of the
+idea that there was only one correct way to set up a Bayesian problem."
+
+"I struggled to understand the Bayesian unit at first. I didn’t really understand why we were
+doing this odd method where we made up stuff to start. I finally understood how the prior
+distribution affected the posterior, with the parameters acting like observations. We can think that
+our prior beliefs are worth some actual data, which will contribute to the data we have to create a
+potentially more accurate model."
 
 ## Activity: Bayes
+
+![](images/uscots_beta.png)
+## Activity: Bayes
+
+"One topic I found interesting was Bayesian Statistics. This topic incorporates things I
+have enjoyed, like kernel matching and finding likelihood functions. It was interesting
+going over different examples in class. I particularly enjoyed the cat-lover example. We
+started with a prior belief about the proportion of people who prefer cats to dogs. Then,
+through a show-of-hands, we collected data. This example took the words off the slides
+for me, demonstrating a practical application of the method. My prior belief was that the
+majority of people prefer dogs. However, if I remember correctly, none of us raised our
+hands in support of cats. Despite my prior belief, this was still super surprising." 
+
+
 
 ## Activity: p-value Paper
 
@@ -260,6 +309,11 @@ price_df |>
 "(The p-value paper) was probably the most thought-provoking assignment for me because it forced me to think critically about how we conduct research. Coming from an Economics background, there is a lot of conversation around the reliability or quality of research. I felt that this assessment was the most impactful for me long-term because it forced me to think critically about something that I had previously just taken for granted...."
 
  <!-- It almost felt like I was back in a philosophy class that I took when I thought I wanted to be a philosophy major. I enjoy thinking about ways to challenge the status quo, so although this assessment was more of a one-off that did not have a great technical focus, I believe that it stimulated my thought process the most out of all assessments. I learned to consider many factors when conducting research, which had a profound impact on my honors project and the conclusions I was able to draw from my analysis. I believe that the broad reach of this assignment, or its cross-functionality across subjects, is what made me enjoy it so much. For me, enjoyment and learning are highly correlated, so when I am enjoying a topic thoroughly, I can deepen my learning. -->
+
+## What Our Students Said
+"I hope to remember that hypothesis tests are fragile instruments. I hope to remember that
+they do not prove anything and provide insight into how much evidence there is for or against the
+null hypothesis in a probabilistic sense."
 
 ## Activity: Assessment
 
