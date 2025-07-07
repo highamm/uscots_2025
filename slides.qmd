@@ -50,6 +50,7 @@ slide about Matt
 
 ::: task
 Form groups of 3 to 5 people with those around you. Introduce yourselves and INSERT SOME INTRO QUESTION. Here are some possible intro questions (pick one or two):
+
 1. What is your favorite course to teach? Do you have a favorite topic in that course? If so, what is it?
 2. If you could ban one misused(?) statistical term forever, what would it be?
 3. What statistical concept do you secretly love more than you admit?
@@ -226,6 +227,7 @@ potentially more accurate model."
 ## Activity: Bayes
 
 ![](images/uscots_beta.png)
+
 ## Activity: Bayes
 
 "One topic I found interesting was Bayesian Statistics. This topic incorporates things I

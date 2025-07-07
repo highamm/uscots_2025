@@ -10,6 +10,12 @@ Method of Moments Estimation
 
 Bias/Variance/MSE of Estimators
 
+Consistency
+
+UMVUE
+
+Cramer-Rao Lower Bound
+
 Finite Sampling Theory (e.g., finite-population correction factor).
 
 Confidence Intervals using Pivots
@@ -28,11 +34,21 @@ Neyman-Pearson Hypothesis Testing
 
 Asymptotic LRT
 
+Hypothesis Testing Rejection Regions
+
+Hypothesis tests about variance(s)
+
 Limit Theorems (besides the CLT).
 
 Theory of Regression (e.g., proof that standard regression estimators are the best linear unbiased estimators).
 
 Order statistics
 
+Sample Size Calculations
 
+Power theoretical and Type I/II Errors
+
+Power empirical
+
+Theory of ANOVA
 
