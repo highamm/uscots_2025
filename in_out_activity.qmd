@@ -5,7 +5,7 @@ format: pdf
 
 ## Motivation
 
-The theme of this breakout session is Making a Mathematical Statistics Course More Modern. One of the considerations in making Math Stat more modern is which topics should be included and excluded from the course.
+The theme of this breakout session is "Making a Mathematical Statistics Course More Modern." One of the considerations in making Math Stat more modern is which topics should be included and excluded from the course.
 
 ## Task
 
