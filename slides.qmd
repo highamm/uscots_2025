@@ -140,7 +140,7 @@ idea that comes up a bit: modeling.
 DM: I heard no support for continuing to teach optimal testing (Neyman-Pearson) in first course?
 All: right
 
-question about proofs: "I don’t know. My first reaction is to say do not teach formal derivation. Var( x ) is reasonably accessible, but if BE did not understand the t distribution when he first saw it, then your students won’t. I can’t see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us – you will not be able to squeeze all of this into this course."
+question about proofs: "I don’t know. My first reaction is to say do not teach formal derivation. Var(Xbar) is reasonably accessible, but if BE did not understand the t distribution when he first saw it, then your students won't. I can’t see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us – you will not be able to squeeze all of this into this course."
 
 ## Activity: In or Out?
 
@@ -240,6 +240,26 @@ majority of people prefer dogs. However, if I remember correctly, none of us rai
 hands in support of cats. Despite my prior belief, this was still super surprising." 
 
 
+## Pets
+
+::: {.columns layout-ncol=2}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 100%
+## @Jessica: change this to path to cats
+knitr::include_graphics(here::here("images/mipha.jpg"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 80%
+knitr::include_graphics(here::here("images/mipha.jpg"))
+```
+
+:::
 
 ## Activity: p-value Paper
 
