@@ -49,7 +49,7 @@ slide about Matt
 ## Your Turn
 
 ::: task
-Form groups of 3 to 5 people with those around you. Introduce yourselves and INSERT SOME INTRO QUESTION. Here are some possible intro questions (pick one or two):
+Form groups of 3 to 5 people with those around you. Introduce yourselves and briefly discuss the following intro questions:
 
 1. What is your favorite course to teach? Do you have a favorite topic in that course? If so, what is it?
 2. If you could ban one misused(?) statistical term forever, what would it be?
@@ -119,6 +119,8 @@ countdown(minutes = 4)
 <!-- Things like confidence intervals I could imagine encountering, whereas the pivot method will most likely never come up." -->
 * __Deepened Understanding__: "I (also) considered how much something deepened my conceptual understanding."
 
+## Activity: In or Out?
+
 ## Is Math Stat "Useful?" 
 
 * Could math stat be more "useful?"
@@ -129,7 +131,7 @@ countdown(minutes = 4)
     
 quotes I like: The math stat course has not changed in 40 years, whereas statistics has changed enormously, so how could the course not be obsolete? - Moore
 
-"Leave out point estimation (or allow 5 min tops), hypothesis testing, power, type I error, type II error, and sample size calculation. Put these topics into the "learn to be a consultant" course. Leave out one sample z, two sample t, one sample , chi-square. Leave it out! There is a lot in the traditional course that is worth while but the psyche of the traditional course is not working anymore. The ways to turn it around are not that different than the statistical literacy course..... leave out UMVUE and unbiasedness." - Reid
+"Leave out point estimation (or allow 5 min tops), hypothesis testing, power, type I error, type II error, and sample size calculation. Put these topics into the "learn to be a consultant" course. Leave out one sample z, two sample t, one sample t, chi-square. Leave it out! There is a lot in the traditional course that is worth while but the psyche of the traditional course is not working anymore. The ways to turn it around are not that different than the statistical literacy course..... leave out UMVUE and unbiasedness." - Reid
 
 "The worse thing is that it tends to bore the teachers, and if teachers are bored, students don’t get the liveliness of the subject." - Efron
 
@@ -142,7 +144,7 @@ All: right
 
 question about proofs: "I don’t know. My first reaction is to say do not teach formal derivation. Var(Xbar) is reasonably accessible, but if BE did not understand the t distribution when he first saw it, then your students won't. I can’t see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us – you will not be able to squeeze all of this into this course."
 
-## Activity: In or Out?
+
 
 
 ## Activity: Short Story
@@ -191,32 +193,92 @@ countdown(minutes = 5)
 
 <!-- This project helped to build a base of vocabulary and to show that being able to explain concepts or terms is a good way to demonstrate or practice understanding of those concepts. -->
 
-## Motivation: Student Feedback
+## Activity: Introducing Bayes
+
+* One modern topic that we both brought *in* to Math Stat is Bayesian Statistics
+
+## Activity: Introducing Bayes
+
+* Let X = number of people who prefer cats over dogs. Assume X ~ Binomial(n,p), where p = the proportion of people that prefer cats.
+* Before we collect any data, what do **you** believe to be p is likely to be? How strongly do you believe that?
+
+::: {.columns layout-ncol=3}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 75%
+## @Jessica: change this to path to cats
+knitr::include_graphics(here::here("images/cats.jpg"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 70%
+knitr::include_graphics(here::here("images/uscots_beta.png"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 75%
+knitr::include_graphics(here::here("images/mipha.jpg"))
+```
+
+:::
+
+## Activity: Introducing Bayes
+
+* If you attempted 10 flips of a cup, what proportion of your flips would be successful?  How strongly do you believe that?
+
+::: {.columns layout-ncol=2}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 75%
+knitr::include_graphics(here::here("images/tenor_flip.gif"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 70%
+knitr::include_graphics(here::here("images/uscots_beta.png"))
+```
+
+:::
+
+
+## What a Student Said
 
 "I really hope that I remember Bayes. I feel like this would be helpful for me to remember because I want to
 study epidemiology and public health. As we learn more about disease and track new diseases it will probably
 be useful to update our ideas with what we have learned."
 
-"In my opinion, the process of coming up with a prior is a creative one. There is no single correct answer for
+<!-- "In my opinion, the process of coming up with a prior is a creative one. There is no single correct answer for
 a prior distribution, it is only based on previous knowledge around a subject. Different people may
 come up with different priors, and in turn create a posterior distribution based on data examined after
-the prior is created. It takes creativity to be a Bayesian"
+the prior is created. It takes creativity to be a Bayesian" -->
 
-"I would like to know more about how experts in a field develop informative priors for
-Bayesian Modeling."
+<!-- "I would like to know more about how experts in a field develop informative priors for
+Bayesian Modeling." -->
 
-"Bayesian statistics is a whole different world where we
+<!-- "Bayesian statistics is a whole different world where we
 think about the parameters as random quantities and not having true values. I really liked
 the process of starting with a prior distribution and then using the data to update our
-beliefs with a posterior distribution."
+beliefs with a posterior distribution." -->
 
-"I initially struggled understanding Bayesian statistics. I could not wrap my head around that
+<!-- "I initially struggled understanding Bayesian statistics. I could not wrap my head around that
 concept because I like to find an answer from a given formula. I do not like when
 answers can be subjective and with Bayesian statistics, the choice of the prior distribution
 is highly subjective. I was getting frustrated with myself because I was struggling to
 understand the material and how to do the homework problems. However, I had this
 realization one afternoon that in order to understand this material, I had to let go of the
-idea that there was only one correct way to set up a Bayesian problem."
+idea that there was only one correct way to set up a Bayesian problem." -->
+
+## What a Student Said
 
 "I struggled to understand the Bayesian unit at first. I didn’t really understand why we were
 doing this odd method where we made up stuff to start. I finally understood how the prior
@@ -224,42 +286,20 @@ distribution affected the posterior, with the parameters acting like observation
 our prior beliefs are worth some actual data, which will contribute to the data we have to create a
 potentially more accurate model."
 
-## Activity: Bayes
 
-![](images/uscots_beta.png)
-
-## Activity: Bayes
-
-"One topic I found interesting was Bayesian Statistics. This topic incorporates things I
+<!-- "One topic I found interesting was Bayesian Statistics. This topic incorporates things I
 have enjoyed, like kernel matching and finding likelihood functions. It was interesting
 going over different examples in class. I particularly enjoyed the cat-lover example. We
 started with a prior belief about the proportion of people who prefer cats to dogs. Then,
 through a show-of-hands, we collected data. This example took the words off the slides
 for me, demonstrating a practical application of the method. My prior belief was that the
 majority of people prefer dogs. However, if I remember correctly, none of us raised our
-hands in support of cats. Despite my prior belief, this was still super surprising." 
+hands in support of cats. Despite my prior belief, this was still super surprising." -->
 
+## 
 
-## Pets
-
-::: {.columns layout-ncol=2}
-
-```{r}
-#| echo: false
-#| eval: true
-#| out-width: 100%
-## @Jessica: change this to path to cats
-knitr::include_graphics(here::here("images/mipha.jpg"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| out-width: 80%
-knitr::include_graphics(here::here("images/mipha.jpg"))
-```
-
-:::
+![](images/heybarbie.png)
+<!-- https://biostatisticsryangoslingreturns.tumblr.com/ -->
 
 ## Activity: p-value Paper
 

@@ -1,0 +1,93 @@
+---
+title: "In and Out Activity"
+format: pdf
+---
+
+## Motivation
+
+The theme of this breakout session is Making a Mathematical Statistics Course More Modern. One of the considerations in making Math Stat more modern is which topics should be included and excluded from the course.
+
+## Task
+
+Consider the following list of topics that often appear in a Mathematical Statistics textbook. This list is loosely based on the table of contents from *Mathematical Statistics with Applications* by Wackerly, Mendenhall, and Scheaffer.
+
+Identify 15 topics that you feel should be in a Math Stat course.
+
+*Sampling Distributions*
+
+-   Sampling distributions related to the Normal Distribution (e.g., distribution of xbar)
+
+-   Normal distribution theory (relation to Chisq(1), t, etc.) 
+
+-   Central Limit Theorem
+
+-   Simulating Sampling Distributions
+
+*Estimation Topics*
+
+-   Sufficient Statistics
+
+-   Maximum Likelihood Estimation
+
+-   Method of Moments Estimation
+
+-   Bias/Variance/MSE of Estimators
+
+-   Consistency
+
+-   UMVUE
+
+-   Cramer-Rao Lower Bound
+
+-   Asymptotic distribution of MLEs
+
+-   Confidence Intervals using Pivots
+
+-   Confidence Intervals using Bootstrapping
+
+-   "Conceptual" Confidence Intervals
+
+-   Intro Stat Confidence Intervals
+
+-   Distinguishing between large sample and small sample intervals
+
+
+*Hypothesis Testing Topics*
+
+-   Neyman-Pearson Hypothesis Testing
+
+-   Asymptotic LRT
+
+-   Hypothesis Testing Rejection Regions
+
+-   Hypothesis tests about variance(s)
+
+-   Permutation tests
+
+-   Intro Stat hypothesis tests
+
+-   Distinguishing between large sample and small sample tests
+
+-   Theoretical power and Type I/II Errors
+
+-   Empirical power
+
+*Miscellaneous Topics*
+
+-   Finite Sampling Theory (e.g., finite-population correction factor)
+
+-   Order statistics
+
+-   Sample Size Calculations
+
+-   Limit Theorems (besides the CLT)
+
+*Advanced Topics*
+
+-   Theory of ANOVA
+
+-   Theory of Regression (e.g., proof that standard regression estimators are the best linear unbiased estimators)
+
+-   Bayes
+
+-   Analysis of Categorical Data
