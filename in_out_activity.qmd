@@ -11,7 +11,7 @@ The theme of this breakout session is "Making a Mathematical Statistics Course M
 
 Consider the following list of topics that often appear in a Mathematical Statistics textbook. This list is loosely based on the table of contents from *Mathematical Statistics with Applications* by Wackerly, Mendenhall, and Scheaffer.
 
-Identify 15 topics that you feel should be in a Math Stat course.
+Identify 15 topics that you feel should be in a Math Stat course. For the purposes of this exercise, we are assuming that transformations (method of mgfs, cdfs, and inverse functions) have already been covered in the preceding Probability course).
 
 *Sampling Distributions*
 
@@ -45,7 +45,7 @@ Identify 15 topics that you feel should be in a Math Stat course.
 
 -   Confidence Intervals using Bootstrapping
 
--   "Conceptual" Confidence Intervals
+-   "Conceptual" Confidence Intervals (e.g., what does 95% confidence really mean?)
 
 -   Intro Stat Confidence Intervals
 
