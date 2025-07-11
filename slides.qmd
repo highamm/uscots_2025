@@ -39,10 +39,24 @@ library(here)
 ```
 
 ## About Us
+<!-- Jessica -->
 
-slide about Jessica
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/jc_and_fam.jpg)
+:::
+
+::: {.column width="50%"}
+* __Graduate School__: Iowa State University; Undergrad: Truman State University.
+* __Research__: Multi-criteria optimization and STEM Education (NSF S-STEM).
+* __Favorite Course to Teach__: Probability and (increasingly) Math Stat.
+:::
+
+::::
 
 ## About Us
+<!-- Matt -->
 
 :::: {.columns}
 
@@ -60,13 +74,13 @@ slide about Jessica
 
 
 ## Your Turn
-
+<!-- Jessica -->
 ::: task
-Form groups of 3 to 5 people with those around you. Introduce yourselves and briefly discuss the following intro questions:
+Form groups of 3 to 5 people with those around you. Introduce yourself by discussing one or more of the following questions:
 
 1. What is your favorite course to teach? Do you have a favorite topic in that course? If so, what is it?
-2. If you could ban one misused(?) statistical term forever, what would it be?
-3. What statistical concept do you secretly love more than you admit?
+2. If you could ban one statistical term forever, what would it be?
+3. What statistical concept do you secretly love?
 :::
 
 ```{r}
@@ -76,7 +90,7 @@ countdown(minutes = 4)
 ```
 
 ## Motivation for Session
-
+<!-- Jessica -->
 ::: goals
 1. What more can we do to make math stat more "useful?"
 2. Should we be making a math stat course more modern? Are there downsides to modernizing a math stat course?
@@ -84,7 +98,7 @@ countdown(minutes = 4)
 :::
 
 ## What Do We Mean by "Math-Stat"?
-
+<!-- Jessica -->
 ```{r}
 #| echo: false
 #| out-width: "100%"
@@ -95,6 +109,7 @@ knitr::include_graphics(here("images/stat_major.png"))
 <!-- mention typical audience: undergraduate statistics majors who have already taken a lot of calculus and a semester of probability -->
 
 ## Motivation: Student Feedback
+<!-- Matt -->
 
 ::: {.callout-important appearance="simple"}
 
@@ -115,6 +130,7 @@ knitr::include_graphics(here("images/stat_major.png"))
 :::
 
 ## Your Turn
+<!-- Matt -->
 
 ::: task
 What does it mean for a math-stat course to be "useful?" In your groups, try to come up with a specific definition for "useful" in this context.
@@ -127,6 +143,7 @@ countdown(minutes = 5)
 ```
 
 ## What Our Students Said (Top 3 Response Types)
+<!-- Matt -->
 
 * __Applicable to Future__: "I defined useful as something I think I will continue to use or see again in the future—skills or ideas that expand into future learning goals."
 * __Applicable to the "Real World"__: "I based this on how applicable these things would be to my professional life or general knowledge after college...."
@@ -134,7 +151,7 @@ countdown(minutes = 5)
 * __Deepened Understanding__: "I (also) considered how much something deepened my conceptual understanding."
 
 ## Your Turn
-
+<!-- Jessica -->
 ::: task
 What topics should be included in a math stat course? Consider a list of topics in an accompanying handout, and, with your groups, decide on __15__ that you feel should be in a Math Stat course.
 :::
@@ -145,7 +162,7 @@ countdown(minutes = 10)
 ```
 
 ## Post In or Out
-
+<!-- Jessica -->
 * JSM 2003 Session in San Francisco titled "Is the Math Stat Course obsolete?"
 * Panelists: Nancy Reid (Toronto), Bradley Efron (Stanford), Carl Morris (Harvard).
 * Chair: David Moore (Purdue).
@@ -155,24 +172,25 @@ countdown(minutes = 10)
 <!-- "The worse thing is that it tends to bore the teachers, and if teachers are bored, students don’t get the liveliness of the subject." - Efron -->
 
 ## Post In or Out: Agree or Disagree?
-    
+ <!-- Jessica -->
 "Leave out point estimation (or allow 5 min tops), hypothesis testing, power, type I error, type II error, and sample size calculation. Put these topics into the "learn to be a consultant" course. Leave out one sample z, two sample t, one sample t, chi-square. Leave it out! There is a lot in the traditional course that is worth while but the psyche of the traditional course is not working anymore. The ways to turn it around are not that different than the statistical literacy course.....leave out UMVUE and unbiasedness." - Reid
 
 ## Post In or Out: Agree or Disagree?
-
+<!-- Jessica -->
 Moore: "I heard no support for continuing to teach optimal testing (Neyman-Pearson) in a student's first math-stat course?"
 
 All: "Right."
 
+<!-- ## Post In or Out: Agree or Disagree? -->
+
+<!-- "We should de-emphasize t-test, jackknife, named nonparametric methods, asymptotics (I’ve never seen an infinite sample), Cramer-Rao lower bound. It should not be too much like a catalog. I would add modeling, computing (likelihood graphics), problem solving, decision calculations (how to think about the best thing to do), risk, odds, expectation, sample and experimental design (at least touch on that), foundational issues such as understanding p-values (direction of conditioning), worrying about whether they are any good." - Morris -->
+
 ## Post In or Out: Agree or Disagree?
-
-"We should de-emphasize t-test, jackknife, named nonparametric methods, asymptotics (I’ve never seen an infinite sample), Cramer-Rao lower bound. It should not be too much like a catalog. I would add modeling, computing (likelihood graphics), problem solving, decision calculations (how to think about the best thing to do), risk, odds, expectation, sample and experimental design (at least touch on that), foundational issues such as understanding p-values (direction of conditioning), worrying about whether they are any good." - Morris
-
-## Post In or Out: Agree or Disagree?
-
+<!-- Jessica -->
 Teach proofs? "I don’t know. My first reaction is to say do not teach formal derivation. $\text{Var}(\bar{X})$ is reasonably accessible, but if Efron did not understand the t distribution (derivation) when he first saw it, then your students won't. I can't see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us - you will not be able to squeeze all of this into this course." - Reid.
 
 ## Post In or Out: Bias and Variance
+<!-- Jessica -->
 
 <!-- suppose we've settled on a list of topics. How should we teach those topics? -->
 
@@ -191,6 +209,7 @@ Teach proofs? "I don’t know. My first reaction is to say do not teach formal d
 </div>
 
 ## Ideas for Course Updates
+<!-- Matt -->
 
 ::: goals
 1. Demonstrating depth of understanding of the concepts in an "estimation" section of math stat.
@@ -199,16 +218,19 @@ Teach proofs? "I don’t know. My first reaction is to say do not teach formal d
 :::
 
 ## Activity: Short Story
+<!-- Matt -->
 
 * _Fostering Conceptual Understanding in Mathematical Statistics_ by Green and Blankenship (2015).
     * published in _The American Statistician_.
  <!-- https://doi.org/10.1080/00031305.2015.1069759 -->
 
 ## Activity: Short Story
+<!-- Matt -->
 
 A "meaningful story" is one continuous piece of writing / creative work that uses key words from a list and in which the sentences "make sense and hang together." That is, the ideas in the story must illustrate that you understand key concepts from math-stat in a way that allows you to write "meaningfully" about them. It is your job to use the terms in a way that demonstrates that you understand the statistical concepts involved and why we care about these terms in the big picture of statistical theory.
 
 ## Your Turn
+<!-- Matt -->
 
 ::: task
 With your small group, orally construct a __meaningful paragraph__ about a topic that you will draw from a hat using __3__ of the following __5__ terms:
@@ -227,6 +249,7 @@ countdown(minutes = 8)
 ```
 
 ## What Our Students Wrote About
+<!-- Matt -->
 
 * 80's music.
 * applying to jobs (this is a spring semester course of mostly seniors!).
@@ -235,48 +258,62 @@ countdown(minutes = 8)
 * all kinds of sports!
 
 ## Student Feedback
-
+<!-- Matt -->
 "The second mini-project was the most impactful assessment for me....This project was very different from much of the Math/Stat curriculum and a unique opportunity to show understanding of different terms. Being forced to use these terms in the context of a sentence helps to develop a better understanding of what they mean. It is difficult to explain terms like estimator, variance, or binomial distribution in a statistical context of a story without a good understanding of their meanings...."
 
 <!-- This project helped to build a base of vocabulary and to show that being able to explain concepts or terms is a good way to demonstrate or practice understanding of those concepts. -->
 
 ## Activity: Introducing Bayes
-
-* One modern topic that we both brought *in* to Math Stat is Bayesian Statistics.
+<!-- Jessica -->
+* One topic that we both brought *in* to Math Stat is Bayesian Statistics.
 
 ## Activity: Introducing Bayes
-
+<!-- Jessica -->
 * Let X = number of people who prefer cats over dogs. Assume X ~ Binomial(n,p), where p = the proportion of people that prefer cats.
-* Before we collect any data, what values do **you** think are reasonable for p? How strongly do you believe that?
 
-::: {.columns layout-ncol=3}
+::: {.columns layout-ncol=2}
 
 ```{r}
 #| echo: false
 #| eval: true
-#| out-width: 75%
+#| out-width: 50%
 ## @Jessica: change this to path to cats
 knitr::include_graphics(here::here("images/cats.jpg"))
 ```
 
-```{r}
-#| echo: false
-#| eval: true
-#| out-width: 70%
-knitr::include_graphics(here::here("images/uscots_beta.png"))
-```
 
 ```{r}
 #| echo: false
 #| eval: true
-#| out-width: 75%
+#| out-width: 50%
 knitr::include_graphics(here::here("images/mipha.jpg"))
 ```
 
 :::
 
 ## Activity: Introducing Bayes
+<!-- Jessica -->
+::: goals
+Before we collect any data, what values do **you** think are reasonable for p? How strongly do you believe that? Use the Beta distribution app to identify a probability model that matches these beliefs.
+:::
+::: {.columns layout-ncol=1}
 
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 25%
+## @Jessica: change this to path to cats
+knitr::include_graphics(here::here("images/uscots_beta.png"))
+```
+:::
+
+## Activity: Introducing Bayes
+::: goals
+How can we combine your prior knowledge about the preference of cats to dogs with the data that we collected?
+:::
+
+## Activity: Introducing Bayes
+<!-- Matt -->
 * How good are you at the game of flip cup?
 * What do you think are reasonable values for the probability that you successfully flip the cup upside-down?
 
@@ -285,20 +322,21 @@ knitr::include_graphics(here::here("images/mipha.jpg"))
 ```{r}
 #| echo: false
 #| eval: true
-#| out-width: 75%
+#| out-width: 70%
 knitr::include_graphics(here::here("images/tenor_flip.gif"))
 ```
 
 ```{r}
 #| echo: false
 #| eval: true
-#| out-width: 70%
+#| out-width: 60%
 knitr::include_graphics(here::here("images/uscots_beta.png"))
 ```
 
 :::
 
 ## Activity: Introducing Bayes
+<!-- Matt -->
 
 * Perform __n = 10__ trials of flip-cup and keep track of the number of times that you successfully flip the cup upside-down.
 
@@ -313,6 +351,7 @@ countdown(minutes = 3)
 ```
 
 ## What a Student Said
+<!-- Matt -->
 
 "I really hope that I remember Bayes. I feel like this would be helpful for me to remember because I want to study epidemiology and public health. As we learn more about disease and track new diseases it will probably be useful to update our ideas with what we have learned."
 
@@ -338,6 +377,7 @@ realization one afternoon that in order to understand this material, I had to le
 idea that there was only one correct way to set up a Bayesian problem." -->
 
 ## What a Student Said
+<!-- Matt -->
 
 "I struggled to understand the Bayesian unit at first. I didn’t really understand why we were doing this odd method where we made up stuff to start. I finally understood how the prior distribution affected the posterior, with the parameters acting like observations. We can think that our prior beliefs are worth some actual data, which will contribute to the data we have to create a potentially more accurate model."
 
@@ -351,12 +391,13 @@ for me, demonstrating a practical application of the method. My prior belief was
 majority of people prefer dogs. However, if I remember correctly, none of us raised our
 hands in support of cats. Despite my prior belief, this was still super surprising." -->
 
-## 
-
+## What a Student Said
+<!-- Jessica -->
 ![](images/heybarbie.png)
 <!-- https://biostatisticsryangoslingreturns.tumblr.com/ -->
 
 ## p-value Paper Introduction
+<!-- Jessica -->
 
 Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyond "p< 0.05". _The American Statistician_, _73_ (sup1), 1-19.
 
@@ -365,10 +406,12 @@ Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyo
 <!-- "Moving beyond 'statistical significance' opens researchers to the real significance of statistics, which is 'the science of learning from data, and of measuring, controlling, and communicating uncertainty' (Davidian and Louis 2012)." -->
 
 ## p-value Paper Introduction
+<!-- Jessica -->
 
 "Uncertainty exists everywhere in research.....Significance tests and dichotomized p-values have turned many researchers into scientific snowbirds, trying to avoid dealing with uncertainty by escaping to a "happy place" where results are either statistically significant or not. In the real world, data provide a noisy signal. Variation, one of the causes of uncertainty, is everywhere. Exact replication is difficult to achieve. So it is time to get the right (statistical) gear and "move toward a greater acceptance of uncertainty and embracing of variation" (Gelman 2016).
 
 ## p-value Paper Introduction
+<!-- Jessica -->
 
 "Why is eliminating the use of p-values as a truth arbiter so hard? ‘The basic explanation is neither philosophical nor scientific, but sociologic; everyone uses them,’ says Goodman (2019). ‘It’s the same reason we can use money. When everyone believes in something’s value, we can use it for real things; money for food, and p-values for knowledge claims, publication, funding, and promotion. It doesn’t matter if the p-value doesn’t mean what people think it means; it becomes valuable because of what it buys."
 
@@ -377,17 +420,19 @@ Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyo
 <!-- "As Gelman and Stern (2006) famously observed, the difference between ‘significant’ and ‘not significant’ is not itself statistically significant." -->
 
 ## Student Assignment
+<!-- Jessica -->
 
 1. Towards the end of Section 1, the authors say "As ‘statistical significance’ is used less, statistical thinking will be used more." Elaborate on what you think the authors mean. Give some examples of what you think embodies "statistical thinking."
 
 2. Section 2, third paragraph: The authors state "A label of statistical significance adds nothing to what is already conveyed by [p-value]; in fact, this dichotomization of p-values makes matters worse." Elaborate on what you think the authors means.
 
 ## "These p-values We've Been Using for 4 Years Are Flawed??"
+<!-- Jessica -->
 
 ![](images/tenor.gif)
 
 ## What Our Students Said
-
+<!-- Jessica -->
 <!-- The last mini project taught me to think more critically about statistics.  -->
 
 "I always considered p-values to be the best way to measure significance and did not question what a p-value really meant. The project taught me what statistical thinking is and to take into account more than just whether a p-value passes some threshold. In intro statistics, we are taught to follow specific steps and formulas without much background knowledge or reasoning. I am someone who does not often question information, especially in classes....."
@@ -403,19 +448,21 @@ Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyo
  <!-- It almost felt like I was back in a philosophy class that I took when I thought I wanted to be a philosophy major. I enjoy thinking about ways to challenge the status quo, so although this assessment was more of a one-off that did not have a great technical focus, I believe that it stimulated my thought process the most out of all assessments. I learned to consider many factors when conducting research, which had a profound impact on my honors project and the conclusions I was able to draw from my analysis. I believe that the broad reach of this assignment, or its cross-functionality across subjects, is what made me enjoy it so much. For me, enjoyment and learning are highly correlated, so when I am enjoying a topic thoroughly, I can deepen my learning. -->
 
 ## Your Turn
-
+<!-- Matt -->
 ::: task
-Discuss one or both of the following:
+Discuss one or more of the following:
 
 1. What have you done to make your math stat more modern? 
 
 2. What ideas do you have about making your math stat more modern, either based from this session or from other sources?
+
+3. If you were going to make one change to your math stat course, what would it be?
 :::
 
 ```{r}
 #| echo: false
 
-countdown(minutes = 6)
+countdown(minutes = 8)
 ```
 
 <!-- ## Portfolio Blog Examples -->
@@ -426,7 +473,7 @@ countdown(minutes = 6)
 <!-- * <https://the-staz-codes.github.io/Blog_STAT_326/> -->
 
 ## Projects and Labs
-
+<!-- Matt -->
 ```{r}
 #| echo: false
 #| out-width: "100%"
@@ -435,4 +482,4 @@ knitr::include_graphics(here("images/projects_qr.png"))
 ```
 
 ## Thank You!
-
+<!-- Matt -->

@@ -11,7 +11,7 @@ The theme of this breakout session is "Making a Mathematical Statistics Course M
 
 Consider the following list of topics that often appear in a Mathematical Statistics textbook. This list is loosely based on the table of contents from *Mathematical Statistics with Applications* by Wackerly, Mendenhall, and Scheaffer.
 
-Identify 15 topics that you feel should be in a Math Stat course. For the purposes of this exercise, we are assuming that transformations (method of mgfs, cdfs, and inverse functions) have already been covered in the preceding Probability course).
+Identify 15 topics that you feel must be in a Math Stat course. For the purposes of this exercise, we are assuming that transformations (method of mgfs, cdfs, and inverse functions) have already been covered in the preceding Probability course.
 
 *Sampling Distributions*
 
@@ -49,8 +49,6 @@ Identify 15 topics that you feel should be in a Math Stat course. For the purpos
 
 -   Intro Stat Confidence Intervals
 
--   Distinguishing between large sample and small sample intervals
-
 
 *Hypothesis Testing Topics*
 
@@ -60,13 +58,9 @@ Identify 15 topics that you feel should be in a Math Stat course. For the purpos
 
 -   Hypothesis Testing Rejection Regions
 
--   Hypothesis tests about variance(s)
-
 -   Permutation tests
 
 -   Intro Stat hypothesis tests
-
--   Distinguishing between large sample and small sample tests
 
 -   Theoretical power and Type I/II Errors
 
@@ -80,7 +74,9 @@ Identify 15 topics that you feel should be in a Math Stat course. For the purpos
 
 -   Sample Size Calculations
 
--   Limit Theorems (besides the CLT)
+-   Inference about variances (tests and intervals)
+
+-   Limit Theorems (e.g., weak LLN and strong LLN)
 
 *Advanced Topics*
 
