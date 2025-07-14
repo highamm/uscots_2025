@@ -1,6 +1,8 @@
 ---
 title: "In and Out Activity"
-format: pdf
+format: 
+  pdf:
+    include-in-header: tightlist.tex
 ---
 
 ## Motivation
@@ -13,77 +15,91 @@ Consider the following list of topics that often appear in a Mathematical Statis
 
 Identify 15 topics that you feel must be in a Math Stat course. For the purposes of this exercise, we are assuming that transformations (method of mgfs, cdfs, and inverse functions) have already been covered in the preceding Probability course.
 
+\pagebreak
+
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+
 *Sampling Distributions*
 
--   Sampling distributions related to the Normal Distribution (e.g., distribution of xbar)
+1.  Sampling distributions related to the Normal Distribution (e.g., distribution of xbar)
 
--   Normal distribution theory (relation to Chisq(1), t, etc.) 
+2.   Normal distribution theory (relation to Chisq(1), t, etc.) 
 
--   Central Limit Theorem
+3.   Central Limit Theorem
 
--   Simulating Sampling Distributions
+4.   Simulating sampling distributions
+
+&nbsp;
 
 *Estimation Topics*
 
--   Sufficient Statistics
+5.   Sufficient statistics
 
--   Maximum Likelihood Estimation
+6.   Maximum Likelihood Estimation
 
--   Method of Moments Estimation
+7.   Method of Moments Estimation
 
--   Bias/Variance/MSE of Estimators
+8.   Bias/Variance/MSE of estimators
 
--   Consistency
+9.   Consistency
 
--   UMVUE
+10.   UMVUE
 
--   Cramer-Rao Lower Bound
+11.   Cramer-Rao Lower Bound & Asymptotic distribution of MLEs
 
--   Asymptotic distribution of MLEs
+12.   Confidence Intervals using pivots
 
--   Confidence Intervals using Pivots
+13.   Confidence Intervals using bootstrapping
 
--   Confidence Intervals using Bootstrapping
+14.   "Conceptual" Confidence Intervals (e.g., what does 95% confidence really mean?)
 
--   "Conceptual" Confidence Intervals (e.g., what does 95% confidence really mean?)
+15.   Intro Stat Confidence Intervals
 
--   Intro Stat Confidence Intervals
+&nbsp;
 
+*Hypothesis Testing*
 
-*Hypothesis Testing Topics*
+16.   Neyman-Pearson Hypothesis Testing
 
--   Neyman-Pearson Hypothesis Testing
+17.   Asymptotic Likelihood Ratio Test
 
--   Asymptotic LRT
+18.   Hypothesis Testing rejection regions
 
--   Hypothesis Testing Rejection Regions
+19.   Permutation tests
 
--   Permutation tests
+20.   Intro Stat hypothesis tests
 
--   Intro Stat hypothesis tests
+21.   Theoretical power and Type I/II Errors
 
--   Theoretical power and Type I/II Errors
+22.   Empirical power
 
--   Empirical power
+&nbsp;
 
-*Miscellaneous Topics*
+*Miscellaneous*
 
--   Finite Sampling Theory (e.g., finite-population correction factor)
+23.   Finite sampling theory (e.g., finite-population correction factor)
 
--   Order statistics
+24.   Order statistics
 
--   Sample Size Calculations
+25.   Sample size calculations
 
--   Inference about variances (tests and intervals)
+26.   Inference about variances (tests and intervals)
 
--   Limit Theorems (e.g., weak LLN and strong LLN)
+27.   Limit Theorems (e.g., weak LLN and strong LLN)
+
+&nbsp;
 
 *Advanced Topics*
 
--   Theory of ANOVA
+28.   Theory of ANOVA
 
--   Theory of Regression (e.g., proof that standard regression estimators are the best linear unbiased estimators)
+29.   Theory of Regression (e.g., proof that standard regression estimators are the best linear unbiased estimators)
 
--   Bayes
+30.   Bayesian statistics
 
--   Analysis of Categorical Data
+31.   Analysis of categorical data
+
+&nbsp;
+
+32. Other: __________________________________
