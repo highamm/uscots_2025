@@ -357,10 +357,13 @@ responses_sum <- responses_long |> group_by(topic_short) |>
 ggplot(data = responses_sum |> filter(n >= 1),
        aes(x = n, y = topic_short)) +
   geom_col(aes(fill = group)) +
-  theme_minimal() +
+  theme_minimal(base_size = 19) +
   scale_fill_viridis_d()
 
-responses_sum |> filter(n == 0)
+responses_sum |> filter(n == 0) |>
+  separate(topic_short, into = c("number", "topic"), sep = "\\. ") |>
+  mutate(number = as.numeric(number)) |>
+  arrange(number)
 ```
 
 ::: {.notes}
