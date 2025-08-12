@@ -154,6 +154,7 @@ Jessica.
 ## Feedback B
 
 "There are so many components of this course that I will be able to apply to my future career and life experiences, a lot of which I think everyone regardless of field of study should at least know a little about."
+:::
 
 ::: {.notes}
 
@@ -364,6 +365,7 @@ responses_sum |> filter(n == 0) |>
   separate(topic_short, into = c("number", "topic"), sep = "\\. ") |>
   mutate(number = as.numeric(number)) |>
   arrange(number)
+ggsave("in_out_results.pdf", width = 12, height = 6)
 ```
 
 ::: {.notes}
