@@ -1,0 +1,105 @@
+---
+title: "In and Out Activity"
+format: 
+  pdf:
+    include-in-header: tightlist.tex
+---
+
+## Motivation
+
+The theme of this breakout session is "Making a Mathematical Statistics Course More Modern." One of the considerations in making Math Stat more modern is which topics should be included and excluded from the course.
+
+## Task
+
+Consider the following list of topics that often appear in a Mathematical Statistics textbook. This list is loosely based on the table of contents from *Mathematical Statistics with Applications* by Wackerly, Mendenhall, and Scheaffer.
+
+Identify 15 topics that you feel must be in a Math Stat course. For the purposes of this exercise, we are assuming that transformations (method of mgfs, cdfs, and inverse functions) have already been covered in the preceding Probability course.
+
+\pagebreak
+
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+
+*Sampling Distributions*
+
+1.  Sampling distributions related to the Normal Distribution (e.g., distribution of xbar)
+
+2.   Normal distribution theory (relation to Chisq(1), t, etc.) 
+
+3.   Central Limit Theorem
+
+4.   Simulating sampling distributions
+
+&nbsp;
+
+*Estimation Topics*
+
+5.   Sufficient statistics
+
+6.   Maximum Likelihood Estimation
+
+7.   Method of Moments Estimation
+
+8.   Bias/Variance/MSE of estimators
+
+9.   Consistency
+
+10.   UMVUE
+
+11.   Cramer-Rao Lower Bound & Asymptotic distribution of MLEs
+
+12.   Confidence Intervals using pivots
+
+13.   Confidence Intervals using bootstrapping
+
+14.   "Conceptual" Confidence Intervals (e.g., what does 95% confidence really mean?)
+
+15.   Intro Stat Confidence Intervals
+
+&nbsp;
+
+*Hypothesis Testing*
+
+16.   Neyman-Pearson Hypothesis Testing
+
+17.   Asymptotic Likelihood Ratio Test
+
+18.   Hypothesis Testing rejection regions
+
+19.   Permutation tests
+
+20.   Intro Stat hypothesis tests
+
+21.   Theoretical power and Type I/II Errors
+
+22.   Empirical power
+
+&nbsp;
+
+*Miscellaneous*
+
+23.   Finite sampling theory (e.g., finite-population correction factor)
+
+24.   Order statistics
+
+25.   Sample size calculations
+
+26.   Inference about variances (tests and intervals)
+
+27.   Limit Theorems (e.g., weak LLN and strong LLN)
+
+&nbsp;
+
+*Advanced Topics*
+
+28.   Theory of ANOVA
+
+29.   Theory of Regression (e.g., proof that standard regression estimators are the best linear unbiased estimators)
+
+30.   Bayesian statistics
+
+31.   Analysis of categorical data
+
+&nbsp;
+
+32. Other: __________________________________

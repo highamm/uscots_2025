@@ -1,0 +1,840 @@
+---
+title: "Making a Mathematical Statistics Course More Modern"
+subtitle: "USCOTS 2025"
+date: "July 18, 2025"
+format:
+  revealjs:
+    author: 
+      - "Jessica Chapman"
+      - "Matt Higham"
+    institute: 
+      - "St. Lawrence University (USA)"
+      - "St. Lawrence University (USA)"
+    footer: "Modernizing The Undergraduate Stat. Theory Course"
+    slide-number: true
+    preview-links: true
+    transition: fade
+    theme: [default, slides.scss]
+    smaller: false
+    auto-stretch: true
+    code-link: true
+    incremental: false
+    embed-resources: true
+execute: 
+  echo: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| warning: false
+
+# set width of code output
+options(width = 80)
+
+# load background packages
+library(countdown)
+library(tidyverse)
+library(here)
+```
+
+## About Us
+<!-- Jessica -->
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/jc_and_fam.jpg)
+:::
+
+::: {.column width="50%"}
+* __Graduate School__: Iowa State University; Undergrad: Truman State University.
+* __Research__: Multi-criteria optimization and STEM Education (NSF S-STEM).
+* __Favorite Course to Teach__: Probability and (increasingly) Math Stat.
+:::
+
+::::
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## About Us
+<!-- Matt -->
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/mipha_me.jpeg)
+:::
+
+::: {.column width="50%"}
+* __Graduate School__: Oregon State University; Undergraduate School: Miami University (OH).
+* __Research__: Spatial statistics and `R` package development.
+* __Favorite Course to Teach__: Foundations of Data Science.
+:::
+
+::::
+
+::: {.notes}
+
+Matt. 
+
+:::
+
+## Your Turn
+<!-- Jessica -->
+::: task
+Form groups of 3 to 5 people with those around you. Introduce yourself by discussing one or more of the following questions:
+
+1. What is your favorite course to teach? Do you have a favorite topic in that course? If so, what is it?
+2. If you could ban one statistical term forever, what would it be?
+3. What statistical concept do you secretly love?
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 4)
+```
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Motivation for Session
+<!-- Jessica -->
+::: goals
+1. What more can we do to make math stat more "useful?"
+2. What topics should we be including in a math stat course? What topics do today's students find interesting and engaging? 
+3. How can we teach math stat in a way that students find useful, interesting, and engaging?
+:::
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+
+## What Do We Mean by "Math-Stat"?
+<!-- Jessica -->
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| output: true
+knitr::include_graphics(here("images/stat_major.png"))
+```
+
+<!-- mention typical audience: undergraduate statistics majors who have already taken a lot of calculus and a semester of probability -->
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+
+## Motivation: Student Feedback
+<!-- Matt -->
+
+::: {.callout-important appearance="simple"}
+
+## Feedback A
+
+"I really only think this class is applicable to someone going to grad school or heavily love mathematics. The class is great in that it is difficult and extends your math but very low applicability to life/career."
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Feedback B
+
+"There are so many components of this course that I will be able to apply to my future career and life experiences, a lot of which I think everyone regardless of field of study should at least know a little about."
+:::
+
+::: {.notes}
+
+Matt: two types of feedback: goal is to get more students with the attitude in Feedback B.
+
+:::
+
+
+<!-- other options: "This course has helped my learning because it increased my understanding of important statistical concepts that I will be able to apply in the near future! Also, through this course I have gained critical thinking skills and improved my work on conceptual problems." -->
+
+<!-- other options: "I really enjoyed the real world examples we used and that not every project was analytical; there was a lot of conceptual material as well which made the course well rounded." -->
+:::
+
+## Your Turn
+<!-- Matt -->
+
+::: task
+What does it mean for a math-stat course to be "useful?" In your groups, try to come up with a specific definition for "useful" in this context.
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 5)
+```
+
+::: {.notes}
+
+Matt. share out at end (just a couple of responses).
+
+:::
+
+## What Our Students Said (Top 3 Response Types)
+<!-- Matt -->
+
+1. __Applicable to Future__: "I defined useful as something I think I will continue to use or see again in the future—skills or ideas that expand into future learning goals."
+2. __Applicable to the "Real World"__: "I based this on how applicable these things would be to my professional life or general knowledge after college...."
+<!-- Things like confidence intervals I could imagine encountering, whereas the pivot method will most likely never come up." -->
+3. __Deepened Understanding__: "I (also) considered how much something deepened my conceptual understanding."
+
+::: {.notes}
+
+Matt. in order of decreasing frequency.
+
+:::
+
+## Your Turn
+<!-- Jessica -->
+::: task
+What topics should be included in a math stat course? Consider a list of topics in an accompanying handout, and, with your groups, decide on __15__ that you feel should be in a Math Stat course.
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Your Turn
+
+Have one member of your group fill out the following google form with your 15 math-stat "essentials."
+
+<https://forms.gle/Y43VAEotVp1isKYn8>
+
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| output: true
+knitr::include_graphics(here("images/in_or_out_survey.png"))
+```
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## Post In or Out
+<!-- Jessica -->
+* JSM 2003 Session in San Francisco titled _Is the Math Stat Course obsolete?_
+* Panelists: Nancy Reid (Toronto), Bradley Efron (Stanford), Carl Morris (Harvard).
+* Chair: David Moore (Purdue).
+    <!-- * <https://www.stat.rice.edu/~dobelman/textfiles/MathStatObsolete.Teaching.pdf> -->
+* "The math stat course has not changed in 40 years, whereas statistics has changed enormously, so how could the course not be obsolete?" - Moore
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## Post In or Out: Agree or Disagree?
+<!-- Jessica -->
+Teach proofs? "I don’t know. My first reaction is to say <mark>do not teach formal derivation</mark>. $\text{Var}(\bar{X})$ is reasonably accessible, but if Efron did not understand the t distribution (derivation) when he first saw it, then your students won't. I can't see emphasizing so much the derivations of these distributions, especially those using multivariate calculus. Reality has surpassed us - <mark>you will not be able to squeeze all of this into this course.</mark>" - Reid.
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## Post In or Out: Agree or Disagree?
+ <!-- Jessica -->
+"Leave out point estimation (or allow 5 min tops), hypothesis testing, power, type I error, type II error, and sample size calculation. Put these topics into the <mark>"learn to be a consultant" course</mark>. Leave out one sample z, two sample t, one sample t, chi-square. Leave it out! There is a lot in the traditional course that is worth while but <mark>the psyche of the traditional course is not working anymore</mark>. The ways to turn it around are not that different than the statistical literacy course.....leave out UMVUE and unbiasedness." - Reid
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## Post In or Out: Agree or Disagree?
+<!-- Jessica -->
+Moore: "I heard no support for continuing to teach optimal testing (Neyman-Pearson) in a student's first math-stat course?"
+
+All: "Right."
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+<!-- ## Post In or Out: Agree or Disagree? -->
+
+<!-- "We should de-emphasize t-test, jackknife, named nonparametric methods, asymptotics (I’ve never seen an infinite sample), Cramer-Rao lower bound. It should not be too much like a catalog. I would add modeling, computing (likelihood graphics), problem solving, decision calculations (how to think about the best thing to do), risk, odds, expectation, sample and experimental design (at least touch on that), foundational issues such as understanding p-values (direction of conditioning), worrying about whether they are any good." - Morris -->
+
+## Post In or Out: Survey Results
+<!-- Jessica -->
+<!-- explicitly ask about Other:______ (these are unlikely to show up
+since I am filtering for only the top responses) -->
+
+```{r}
+#| warning: false
+#| echo: false
+#| output: false
+#| eval: false
+##  ADD CODE HERE TO ANALYZE SURVEY RESULTS
+##  (probably just a bar plot, making sure not to drop any topics
+##  with 0 counts)
+##  colour by what we did in the last iteration
+library(googlesheets4)
+library(tidyverse)
+responses_wide <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1LlhZUYgl0i44vkh6LGH0wfrkoTY5GbTnYF4QeYm3mFY/edit?resourcekey=&gid=1552491828#gid=1552491828") |>
+  slice(-2)##|> slice(-2, -3) first row is our course, second row is fake
+responses_long <- responses_wide |>
+  pivot_longer(-1, names_to = "group", values_to = "topic") |>
+  separate_longer_delim(topic, delim = ", ") |>
+  filter(str_detect(topic, pattern = "^\\d")) |> ## so lazy, hopefully nothing breaks
+  mutate(topic_short = case_when(str_count(topic, boundary("word")) >= 5 ~  map_chr(topic, ~ str_c(word(.x, 1:5), collapse = " ")),
+                                 str_count(topic, boundary("word")) < 5 ~ topic,
+                               .default = topic)) |>
+  mutate(topic_short = if_else(is.na(topic_short),
+                               true = topic, 
+                               false = topic_short))
+
+responses_sum <- responses_long |> group_by(topic_short) |>
+  summarise(n = n(),
+            group = first(group)) |>
+  mutate(topic_short = fct_recode(topic_short,
+  "1. Sampling dists" = "1. Sampling distributions related to",
+  "2. Normal dist theory" = "2. Normal distribution theory (relation",
+  "3. CLT" = "3. Central Limit Theorem",
+  "4. Simulating sampling dists" = "4. Simulating sampling distributions",
+  "5. Sufficient stats" = "5. Sufficient statistics",
+  "6. MLE" = "6. Maximum Likelihood Estimation",
+  "7. MoM Estimation" = "7. Method of Moments Estimation",
+  "8. Bias/Var/MSE" = "8. Bias/Variance/MSE of estimators",
+  "9. Consistency" = "9. Consistency",
+  "10. UMVUE" = "10. UMVUE",
+  "11. Cramer-Rao LB" = "11. Cramer-Rao Lower Bound &",
+  "12. CIs using pivots" = "12. Confidence Intervals using pivots",
+  "13. CIs via bootstrap" = "13. Confidence Intervals using bootstrapping",
+  "14. Conceptual CIs" = "14. \"Conceptual\" Confidence Intervals (e.g.",
+  "15. Intro Stat CIs" = "15. Intro Stat Confidence Intervals",
+  "16. Neyman Pearson HTs" = "16. Neyman-Pearson Hypothesis Testing",
+  "17. Asymptotic LRT" = "17. Asymptotic Likelihood Ratio Test",
+  "18. Rejection regions" = "18. Hypothesis Testing rejection regions",
+  "19. Permutation tests" = "19. Permutation tests",
+  "20. Intro Stat HTs" = "20. Intro Stat hypothesis tests",
+  "21. Theoretical power" = "21. Theoretical power and Type",
+  "22. Empirical power" = "22. Empirical power",
+  "23. Finite sampling theory" = "23. Finite sampling theory (e.g.",
+  "24. Order stats" = "24. Order statistics",
+  "25. Sample size calc" = "25. Sample size calculations",
+  "26. Variance inference" = "26. Inference about variances (tests",
+  "27. Limit theorems" = "27. Limit Theorems (e.g.",
+  "28. ANOVA theory" = "28. Theory of ANOVA",
+  "29. Regression theory" = "29. Theory of Regression (e.g.",
+  "30. Bayesian statistics" = "30. Bayesian statistics",
+  "31. Categorical data" = "31. Analysis of categorical data"
+)) |>
+  mutate(topic_short = fct_reorder(topic_short, n)) |>
+  mutate(n = n - 1) 
+
+ggplot(data = responses_sum |> filter(n >= 1),
+       aes(x = n, y = topic_short)) +
+  geom_col(aes(fill = group)) +
+  theme_minimal(base_size = 19) +
+  scale_fill_viridis_d()
+
+responses_sum |> filter(n == 0) |>
+  separate(topic_short, into = c("number", "topic"), sep = "\\. ") |>
+  mutate(number = as.numeric(number)) |>
+  arrange(number)
+ggsave("in_out_results.pdf", width = 12, height = 6)
+```
+
+::: {.notes}
+
+Jessica. Explicitly ask about the "other" as the way that I am filtering means that these are going to get filtered out (unless two people happen to use the same _exact_ wording).
+
+:::
+
+## Post In or Out: Bias and Variance
+<!-- Jessica -->
+
+<!-- suppose we've settled on a list of topics. How should we teach those topics? -->
+
+<div style="font-size:85%">
+
+1. Compute bias, variance, and MSE of an estimator "by hand" through integration.
+
+2. Approximate bias, variance, and MSE of an estimator computationally through Monte Carlo simulation.
+
+3. Construct plots of estimator PDFs that demonstrate conceptual understanding of "high bias, low variance" estimators and "low bias, high variance" estimators.
+
+4. Explain what it means for an estimator to have high variance.
+
+5. Extend concepts beyond a simple estimator $\hat{\theta}$ to more complex settings (like a comparison of simple linear regression and Lasso regression).
+
+</div>
+
+::: {.notes}
+
+Jessica. 
+
+:::
+
+## Ideas for Course Updates
+<!-- Matt -->
+
+::: goals
+1. Demonstrating depth of understanding of the concepts in an "estimation" section of math stat.
+2. Introducing Bayesian with an in-class activity.
+3. Discussing the benefits and drawbacks of using p-values to answer research questions.
+:::
+
+::: {.notes}
+
+Matt. mention that we have started to modernize in a couple of ways: emphasizing conceptual understanding and introducing more modern topics like Bayes.
+
+:::
+
+## Activity: Short Story
+<!-- Matt -->
+
+* _Fostering Conceptual Understanding in Mathematical Statistics_ by Green and Blankenship (2015).
+    * published in _The American Statistician_.
+ <!-- https://doi.org/10.1080/00031305.2015.1069759 -->
+
+::: {.notes}
+
+Matt. authors have lots of ideas to foster conceptual understand. Spies vs. agents game to help understand MLEs.
+
+:::
+
+## Activity: Short Story
+<!-- Matt -->
+
+A "meaningful story" is one continuous piece of writing / creative work that uses key words from a list and in which the sentences "make sense and hang together." That is, the ideas in the story must <mark>illustrate that you understand key concepts from math-stat</mark> in a way that allows you to write "meaningfully" about them. It is your job to use the terms in a way that demonstrates that you understand the statistical concepts involved and why we care about these terms in <mark>the big picture of statistical theory.</mark>
+
+::: {.notes}
+
+Matt. this is one thing that we adapted from Green and Blankenship that we have both enjoyed doing.
+
+:::
+
+## Your Turn
+<!-- Matt -->
+
+::: task
+With your small group, orally construct a __meaningful paragraph__ about a topic that you will draw from a hat using __3__ of the following __5__ terms:
+
+* Estimator
+* Estimate (as a noun)
+* Parameter
+* Bias
+* Variance
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 8)
+```
+
+::: {.notes}
+
+Matt. share out what their story topic was and how groups used a single term in their story. can also mention it's harder than it seems (e.g., likelihood and bias were both misused).
+
+:::
+
+## What Our Students Wrote About
+<!-- Matt -->
+
+* 80's music.
+* applying to jobs (this is a spring semester course of mostly seniors!).
+* gender inequality in women's and men's hockey.
+* living on a farm.
+* all kinds of sports!
+
+::: {.notes}
+
+Matt. all of the topics you chose from are things our students wrote about!
+
+:::
+
+## Student Feedback
+<!-- Matt -->
+"The second mini-project was the most impactful assessment for me....This project was <mark>very different from much of the Math/Stat curriculum</mark> and a unique opportunity to show understanding of different terms. Being forced to use these terms in the context of a sentence helps to develop a better understanding of what they mean. It is difficult to explain terms like estimator, variance, or binomial distribution in a statistical context of a story without a good understanding of their meanings...."
+
+<!-- This project helped to build a base of vocabulary and to show that being able to explain concepts or terms is a good way to demonstrate or practice understanding of those concepts. -->
+
+::: {.notes}
+
+Matt. One reason some students like it: it's so different from other assignments in statistics courses.
+
+:::
+
+## Activity: Introducing Bayes
+<!-- Jessica -->
+* One topic that we both brought *in* to Math Stat is Bayesian Statistics.
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Activity: Introducing Bayes
+<!-- Jessica -->
+* Let X = number of people who prefer cats over dogs. Assume X ~ Binomial(n,p), where p = the proportion of people that prefer cats.
+
+::: {.columns layout-ncol=2}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 50%
+## @Jessica: change this to path to cats
+knitr::include_graphics(here::here("images/cats.jpg"))
+```
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 50%
+knitr::include_graphics(here::here("images/mipha.jpg"))
+```
+
+:::
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Activity: Introducing Bayes
+<!-- Jessica -->
+::: goals
+Before we collect any data, what values do **you** think are reasonable for p? How strongly do you believe that? Use the Beta distribution app to identify a probability model that matches these beliefs.
+:::
+::: {.columns layout-ncol=1}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 25%
+## @Jessica: change this to path to cats
+knitr::include_graphics(here::here("images/uscots_beta.png"))
+```
+:::
+
+
+## Activity: Introducing Bayes
+::: goals
+How can we combine your prior knowledge about the preference of cats to dogs with the data that we collected?
+:::
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Activity: Introducing Bayes
+<!-- Matt -->
+* How good are you at the game of flip cup?
+* What do you think are reasonable values for the probability that you successfully flip the cup upside-down?
+
+::: {.columns layout-ncol=2}
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 70%
+knitr::include_graphics(here::here("images/tenor_flip.gif"))
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| out-width: 60%
+knitr::include_graphics(here::here("images/uscots_beta.png"))
+```
+
+:::
+
+::: {.notes}
+
+Matt. haven't yet introduced the idea that p is random. (ask Jessica to pass out cups or have them passed out while Jessica is introducing cats vs. dogs.
+
+:::
+
+## Activity: Introducing Bayes
+<!-- Matt -->
+
+* Perform __n = 10__ trials of flip-cup and keep track of the number of times that you successfully flip the cup upside-down.
+
+::: goals
+How can we combine your prior knowledge about your flip cup abilities with the data that you collected?
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 3)
+```
+
+
+::: {.notes}
+
+Matt.
+
+:::
+
+## Student Feedback
+<!-- Matt -->
+
+"I really hope that I remember Bayes. I feel like this would be helpful for me to remember because I want to study epidemiology and public health. As we learn more about disease and track new diseases it will probably be <mark>useful to update our ideas</mark> with what we have learned."
+
+::: {.notes}
+
+Matt. Again, it's just so different from what students encountered before.
+
+:::
+
+<!-- "In my opinion, the process of coming up with a prior is a creative one. There is no single correct answer for
+a prior distribution, it is only based on previous knowledge around a subject. Different people may
+come up with different priors, and in turn create a posterior distribution based on data examined after
+the prior is created. It takes creativity to be a Bayesian" -->
+
+<!-- "I would like to know more about how experts in a field develop informative priors for
+Bayesian Modeling." -->
+
+<!-- "Bayesian statistics is a whole different world where we
+think about the parameters as random quantities and not having true values. I really liked
+the process of starting with a prior distribution and then using the data to update our
+beliefs with a posterior distribution." -->
+
+<!-- "I initially struggled understanding Bayesian statistics. I could not wrap my head around that
+concept because I like to find an answer from a given formula. I do not like when
+answers can be subjective and with Bayesian statistics, the choice of the prior distribution
+is highly subjective. I was getting frustrated with myself because I was struggling to
+understand the material and how to do the homework problems. However, I had this
+realization one afternoon that in order to understand this material, I had to let go of the
+idea that there was only one correct way to set up a Bayesian problem." -->
+
+## Student Feedback
+<!-- Matt -->
+
+"I struggled to understand the Bayesian unit at first. I didn’t really understand why we were doing this <mark>odd method where we made up stuff to start.</mark> I finally understood how the prior distribution affected the posterior, with the parameters acting like observations. We can think that our prior beliefs are worth some actual data, which will contribute to the data we have to create a potentially more accurate model."
+
+::: {.notes}
+
+Matt.
+
+:::
+
+<!-- "One topic I found interesting was Bayesian Statistics. This topic incorporates things I
+have enjoyed, like kernel matching and finding likelihood functions. It was interesting
+going over different examples in class. I particularly enjoyed the cat-lover example. We
+started with a prior belief about the proportion of people who prefer cats to dogs. Then,
+through a show-of-hands, we collected data. This example took the words off the slides
+for me, demonstrating a practical application of the method. My prior belief was that the
+majority of people prefer dogs. However, if I remember correctly, none of us raised our
+hands in support of cats. Despite my prior belief, this was still super surprising." -->
+
+## Student Feedback
+<!-- Jessica -->
+![](images/heybarbie.png)
+<!-- https://biostatisticsryangoslingreturns.tumblr.com/ -->
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## p-value Paper Introduction
+<!-- Jessica -->
+
+Wasserstein, R. L., Schirm, A. L., & Lazar, N. A. (2019). Moving to a world beyond "p< 0.05". _The American Statistician_, _73_ (sup1), 1-19.
+
+<!-- To move forward to a world beyond "p < 0.05," we must recognize afresh that statistical inference is not - and never has been - equivalent to scientific inference (Hubbard, Haig, and Parsa 2019; Ziliak 2019). However, looking to statistical significance for a marker of scientific observations' credibility has created a guise of equivalency.  -->
+
+<!-- "Moving beyond 'statistical significance' opens researchers to the real significance of statistics, which is 'the science of learning from data, and of measuring, controlling, and communicating uncertainty' (Davidian and Louis 2012)." -->
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## p-value Paper Introduction
+<!-- Jessica -->
+
+"Uncertainty exists everywhere in research.....Significance tests and dichotomized p-values have turned many researchers into scientific snowbirds, trying to avoid dealing with uncertainty by escaping to a "happy place" where results are <mark>either statistically significant or not</mark>. In the real world, data provide a noisy signal. <mark>Variation, one of the causes of uncertainty, is everywhere.</mark> Exact replication is difficult to achieve. So it is time to get the right (statistical) gear and "move toward a greater acceptance of uncertainty and embracing of variation" (Gelman 2016).
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## p-value Paper Introduction
+<!-- Jessica -->
+
+"Why is eliminating the use of p-values as a truth arbiter so hard? ‘The basic explanation is neither philosophical nor scientific, but sociologic; everyone uses them,’ says Goodman (2019). <mark>It’s the same reason we can use money.</mark> When everyone believes in something’s value, we can use it for real things; money for food, and p-values for knowledge claims, publication, funding, and promotion. It doesn’t matter if the p-value doesn’t mean what people think it means; it becomes valuable because of what it buys."
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+<!-- ## p-value Paper Introduction -->
+
+<!-- "As Gelman and Stern (2006) famously observed, the difference between ‘significant’ and ‘not significant’ is not itself statistically significant." -->
+
+## Student Assignment
+<!-- Jessica -->
+
+1. Towards the end of Section 1, the authors say <mark>"As ‘statistical significance’ is used less, statistical thinking will be used more."</mark> Elaborate on what you think the authors mean. Give some examples of what you think embodies "statistical thinking."
+
+2. Section 2, third paragraph: The authors state "A label of statistical significance adds nothing to what is already conveyed by [p-value]; in fact, <mark>this dichotomization of p-values makes matters worse."</mark> Elaborate on what you think the authors means.
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## "These p-values We've Been Using for 4 Years Are Flawed??"
+<!-- Jessica -->
+
+![](images/tenor.gif)
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+## Student Feedback
+<!-- Jessica -->
+<!-- The last mini project taught me to think more critically about statistics.  -->
+
+"I always considered p-values to be the best way to measure significance and did not question what a p-value really meant. The project taught me what statistical thinking is and to <mark>take into account more than just whether a p-value passes some threshold.</mark> In intro statistics, we are taught to follow specific steps and formulas without much background knowledge or reasoning. I am someone who does not often question information, especially in classes....."
+
+::: {.notes}
+
+Jessica.
+
+:::
+
+<!-- I take the information given to me and regard it as the truth, and the best way to solve a problem. Further than just p-values, I realized that even though something is taught a certain way, there may be more information or different interpretations. Especially in quantitative classes, it is easy to see a formula and not question it, but it is important to understand where things come from, and why we use the methods we are taught. -->
+
+<!-- ## What Our Students Said -->
+
+<!-- I think that I learned the most from mini project 5, since it was one of the more interesting mathematical papers I have read. The discussion of redefining the way we look at statistical analysis had me hungry for more. It  -->
+
+<!-- "(The p-value paper) was probably the most thought-provoking assignment for me because it forced me to think critically about how we conduct research. Coming from an Economics background, there is a lot of conversation around the reliability or quality of research. I felt that this assessment was the most impactful for me long-term because it forced me to think critically about something that I had previously just taken for granted...." -->
+
+ <!-- It almost felt like I was back in a philosophy class that I took when I thought I wanted to be a philosophy major. I enjoy thinking about ways to challenge the status quo, so although this assessment was more of a one-off that did not have a great technical focus, I believe that it stimulated my thought process the most out of all assessments. I learned to consider many factors when conducting research, which had a profound impact on my honors project and the conclusions I was able to draw from my analysis. I believe that the broad reach of this assignment, or its cross-functionality across subjects, is what made me enjoy it so much. For me, enjoyment and learning are highly correlated, so when I am enjoying a topic thoroughly, I can deepen my learning. -->
+
+## Your Turn
+<!-- Matt -->
+::: task
+
+In your small groups, discuss one or more of the following:
+
+1. What have you done to make your math stat more modern? 
+
+2. What ideas do you have about making your math stat more modern, either based from this session or from other sources?
+
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 7)
+```
+
+::: {.notes}
+
+Matt. "more modern" can be a new topic, a different way to assess something, a different way to teach something, etc. share out a few ideas from groups.
+
+:::
+
+## Your Turn
+<!-- Matt -->
+::: task
+
+If you were going to make one change to your math stat course, what would it be?
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 3)
+```
+
+::: {.notes}
+
+Matt. One actionable item, especially if you are teaching math-stat again soon!
+
+:::
+
+<!-- ## Portfolio Blog Examples -->
+
+<!-- * <https://norah-kuduk.github.io/stat326-blog/> -->
+<!-- * <https://taylorlum.github.io/mathstat_blog/> -->
+<!-- * <https://sarahs03.github.io/blog_326/> -->
+<!-- * <https://the-staz-codes.github.io/Blog_STAT_326/> -->
+
+<!-- ## Closing Quote -->
+<!-- <!-- Matt --> 
+
+<!-- "The worse thing [about math-stat] is that it tends to bore the teachers, and if teachers are bored, students don’t get the liveliness of the subject." - Efron -->
+
+
+## Projects and Labs
+<!-- Matt -->
+```{r}
+#| echo: false
+#| out-width: "100%"
+#| output: true
+knitr::include_graphics(here("images/projects_qr.png"))
+```
+
+::: {.notes}
+
+Matt. Primarily has the computing part of our course (so, the less traditional part). Short story assignment, the p-value paper assignment, some of the Bayes stuff also here.
+
+:::
+
+## Thank You!
+<!-- Matt -->
+
+::: {.notes}
+
+Matt.
+
+:::
